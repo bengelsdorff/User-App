@@ -1,0 +1,5 @@
+Create a solution in visual studio 2008(or above)
+1. Add a web project using asp.net
+2. Add an attached database with one table called users(id, name, email, password)
+3. Create a webservice that will validate the passed in creds using entity framework and if validated add the user to the session and return a JSON object. 
+4. Create a web page (you can style this as you wish) with 2 inputs - an email address and a password. Add a button which on click will make a web service call (using JavaScript/JQuery), and show a message box with the response.
