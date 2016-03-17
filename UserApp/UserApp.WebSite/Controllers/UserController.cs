@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using UserApp.Core;
+using UserApp.Core.Interfaces;
 using UserApp.Domain;
 using UserApp.Filters;
 using UserApp.Models;
@@ -16,6 +17,13 @@ namespace UserApp.Controllers
 {
     public class UserController : Controller
     {
+        private IUserBusinessLogic userBusinessLogic { get; set; }
+
+        public UserController(IUserBusinessLogic userBusinessLogic)
+        {
+            this.userBusinessLogic = userBusinessLogic;
+        }
+
 
         public ActionResult SignIn()
         {
@@ -26,7 +34,7 @@ namespace UserApp.Controllers
         [ValidateAjaxAntiForgeryToken]
         public async Task<AuthenticationStatus> SignIn(string email, string password)
         {
-            var result = await new UserBusinessLogic(new Domain.Context()).SignIn(email, password);
+            var result = await userBusinessLogic.SignIn(email, password);
 
             if (result.Item1 == AuthenticationStatus.Valid)
             {
