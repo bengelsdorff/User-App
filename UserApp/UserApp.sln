@@ -3,34 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApp.WebSite", "UserApp.WebSite\UserApp.WebSite.csproj", "{5611DC41-B1A5-4CBF-979A-38B874DFE691}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite", "UserApp.WebSite\WebSite.csproj", "{5611DC41-B1A5-4CBF-979A-38B874DFE691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApp.WebSite.Tests", "UserApp.WebSite.Tests\UserApp.WebSite.Tests.csproj", "{07B77A1D-B1DF-436B-B13C-515C7C34493D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.Tests", "UserApp.WebSite.Tests\WebSite.Tests.csproj", "{07B77A1D-B1DF-436B-B13C-515C7C34493D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Presentation Layer", "10 Presentation Layer", "{55834599-36EF-474F-B3DC-EDF404AE2646}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 Documentation Layer", "00 Documentation Layer", "{C3C489DA-7E9C-4EA6-ADC4-0F09543BCB02}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 Documentation", "00 Documentation", "{C3C489DA-7E9C-4EA6-ADC4-0F09543BCB02}"
 	ProjectSection(SolutionItems) = preProject
 		_documentation\description.txt = _documentation\description.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 Business Layer", "30 Business Layer", "{4B552269-12DA-46B8-8BD4-259A28A98CDA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "UserApp.Core\Business.csproj", "{3F1D4D56-1ECE-473C-947B-E605D86DD3AC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40 Data Layer", "40 Data Layer", "{AA9DE18F-6A2A-49BE-8F2D-4E10BAD74515}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50 Cross-Cutting Layer", "50 Cross-Cutting Layer", "{78213ED1-8731-4CEF-962D-45894F70787E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "60 Deployment Layer", "60 Deployment Layer", "{04504070-84B2-41B4-ADC8-EF3D8522C2AF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApp.Core", "UserApp.Core\UserApp.Core.csproj", "{3F1D4D56-1ECE-473C-947B-E605D86DD3AC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApp.Repository", "UserApp.Repository\UserApp.Repository.csproj", "{B466B79B-3881-4FC4-B82D-671B6029B988}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20 Service Layer", "20 Service Layer", "{4445C3A2-0AE8-40DD-909C-22B938F48018}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApp.Service", "UserApp.Service\UserApp.Service.csproj", "{FEB34BCE-B56B-40D8-8A71-CCB0C6EE611A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApp.Service.Tests", "UserApp.Service.Tests\UserApp.Service.Tests.csproj", "{9C60095E-C00A-4504-B663-568FADD1CD9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "UserApp.Domain\Domain.csproj", "{B466B79B-3881-4FC4-B82D-671B6029B988}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,24 +38,8 @@ Global
 		{B466B79B-3881-4FC4-B82D-671B6029B988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B466B79B-3881-4FC4-B82D-671B6029B988}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B466B79B-3881-4FC4-B82D-671B6029B988}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FEB34BCE-B56B-40D8-8A71-CCB0C6EE611A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEB34BCE-B56B-40D8-8A71-CCB0C6EE611A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FEB34BCE-B56B-40D8-8A71-CCB0C6EE611A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FEB34BCE-B56B-40D8-8A71-CCB0C6EE611A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C60095E-C00A-4504-B663-568FADD1CD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C60095E-C00A-4504-B663-568FADD1CD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C60095E-C00A-4504-B663-568FADD1CD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C60095E-C00A-4504-B663-568FADD1CD9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{5611DC41-B1A5-4CBF-979A-38B874DFE691} = {55834599-36EF-474F-B3DC-EDF404AE2646}
-		{07B77A1D-B1DF-436B-B13C-515C7C34493D} = {55834599-36EF-474F-B3DC-EDF404AE2646}
-		{3F1D4D56-1ECE-473C-947B-E605D86DD3AC} = {4B552269-12DA-46B8-8BD4-259A28A98CDA}
-		{B466B79B-3881-4FC4-B82D-671B6029B988} = {AA9DE18F-6A2A-49BE-8F2D-4E10BAD74515}
-		{FEB34BCE-B56B-40D8-8A71-CCB0C6EE611A} = {4445C3A2-0AE8-40DD-909C-22B938F48018}
-		{9C60095E-C00A-4504-B663-568FADD1CD9B} = {4445C3A2-0AE8-40DD-909C-22B938F48018}
 	EndGlobalSection
 EndGlobal

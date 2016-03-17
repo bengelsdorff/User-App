@@ -1,0 +1,57 @@
+﻿@model UserApp.Models.User
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@Html.AntiForgeryToken()
+
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        <h4>MVC Razor + Post</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @placeholder = "Email", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @placeholder = "Password", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Sign in" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<form id="signin-form" action="">
+    <div class="form-horizontal">
+        <h4>Plan HTML + jQuery + Ajax</h4>
+        <hr />
+        <div class="form-group">
+            <div class="col-md-10">
+                <input id="email-input" type="text" placeholder="Email" class="form-control" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input id="password-input" type="password" placeholder="Password" class="form-control" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input id="signin-button" type="submit" value="Sign in" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
