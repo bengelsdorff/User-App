@@ -17,6 +17,7 @@ namespace UserApp
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutoMapperConfig.Configure();
+            IoCConfig.Initialize();
         }
     }
 }

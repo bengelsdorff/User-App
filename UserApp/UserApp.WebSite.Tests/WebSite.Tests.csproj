@@ -35,6 +35,10 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -83,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Controllers\UserControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -92,6 +96,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UserApp.Core\Business.csproj">
+      <Project>{3f1d4d56-1ece-473c-947b-e605d86dd3ac}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserApp.Domain\Domain.csproj">
+      <Project>{b466b79b-3881-4fc4-b82d-671b6029b988}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UserApp.WebSite\WebSite.csproj">
       <Project>{5611DC41-B1A5-4CBF-979A-38B874DFE691}</Project>
       <Name>WebSite</Name>
