@@ -2,9 +2,9 @@
 A simple user aplication in C#
 
 Layers:
-WebSite
-Business
-Domain
+-WebSite.
+-Business.
+-Domain.
 
 Packages used:
 - Bootstrap responsible design template.
