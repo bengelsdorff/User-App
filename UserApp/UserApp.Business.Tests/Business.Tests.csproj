@@ -71,7 +71,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UserApp.Core\Business.csproj">
+    <ProjectReference Include="..\UserApp.Business\Business.csproj">
       <Project>{3f1d4d56-1ece-473c-947b-e605d86dd3ac}</Project>
       <Name>Business</Name>
     </ProjectReference>
