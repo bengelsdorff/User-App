@@ -2,11 +2,8 @@
 A simple user aplication in C#
 
 Layers:
-
 WebSite
------
 Business
------
 Domain
 
 Packages used:
