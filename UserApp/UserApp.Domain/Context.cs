@@ -12,8 +12,9 @@ namespace UserApp.Domain
     public class Context : DbContext, IContext
     {
 
-        public Context() : base()
+        public Context() : base("Context")
         {
+            this.Database.CommandTimeout = 180;
             Database.SetInitializer(new UserInitializer());
         }
 
