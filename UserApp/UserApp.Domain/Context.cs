@@ -15,7 +15,7 @@ namespace UserApp.Domain
         public Context() : base("Context")
         {
             this.Database.CommandTimeout = 180;
-            Database.SetInitializer(new UserInitializer());
+             Database.SetInitializer(new UserInitializer());
         }
 
         public virtual DbSet<User> Users { get; set; }
